@@ -40,7 +40,7 @@ echo ""
 cd ..
 else
 echo "Getting Nmap"
-svn co --username guest --password "" svn://svn.nmap.org/nmap/ nmap/
+svn co --username guest --password "" https://svn.nmap.org/nmap/ nmap/
 echo ""
 fi
 
