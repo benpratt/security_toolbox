@@ -156,3 +156,18 @@ git clone https://github.com/darkoperator/dnsrecon.git dnsrecon
 echo ""
 fi
 
+# hash-identifier
+if test -d hash-identifier
+then
+echo "Updating hash-identifier"
+cd hash-identifier
+svn update
+echo ""
+cd ..
+else
+echo "Getting hash-identifier"
+svn checkout http://hash-identifier.googlecode.com/svn/trunk/ hash-identifier
+echo ""
+fi
+
+
