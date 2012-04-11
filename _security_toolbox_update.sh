@@ -170,4 +170,17 @@ svn checkout http://hash-identifier.googlecode.com/svn/trunk/ hash-identifier
 echo ""
 fi
 
+# theharvester
+if test -d theharvester
+then
+echo "Updating theharvester"
+cd theharvester
+svn update
+echo ""
+cd ..
+else
+echo "Getting theharvester"
+svn checkout svn checkout http://theharvester.googlecode.com/svn/trunk/ theharvester
+echo ""
+fi
 
