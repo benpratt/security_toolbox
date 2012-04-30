@@ -180,7 +180,7 @@ echo ""
 cd ..
 else
 echo "Getting theharvester"
-svn checkout svn checkout http://theharvester.googlecode.com/svn/trunk/ theharvester
+svn checkout http://theharvester.googlecode.com/svn/trunk/ theharvester
 echo ""
 fi
 
