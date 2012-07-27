@@ -105,12 +105,12 @@ if test -d sqlmap
 then
 echo "Updating sqlmap"
 cd sqlmap
-svn update
+git pull
 echo ""
 cd ..
 else
 echo "Getting sqlmap"
-svn checkout https://svn.sqlmap.org/sqlmap/trunk/sqlmap sqlmap/
+git clone https://github.com/sqlmapproject/sqlmap.git sqlmap
 echo ""
 fi
 
