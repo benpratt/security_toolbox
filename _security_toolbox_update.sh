@@ -184,3 +184,17 @@ svn checkout http://theharvester.googlecode.com/svn/trunk/ theharvester
 echo ""
 fi
 
+# Nmap-Tools by SpiderLabs from github
+if test -d nmap-tools
+then
+echo "Updating Nmap-Tools by SpiderLabs from github"
+cd nmap-tools
+git pull
+echo ""
+cd ..
+else
+echo "Getting Nmap-Tools by SpiderLabs from github"
+git clone https://github.com/SpiderLabs/Nmap-Tools.git nmap-tools
+echo ""
+fi
+
