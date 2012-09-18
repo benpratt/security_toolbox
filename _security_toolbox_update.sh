@@ -29,7 +29,7 @@ echo ""
 cd ..
 else
 echo "Getting Metasploit from svn"
-svn co https://www.metasploit.com/svn/framework3/trunk/ metasploit/
+svn co https://www.metasploit.com/svn/framework3/trunk/ metasploit_svn/
 echo "Metasploit from svn downloaded"
 echo ""
 fi
