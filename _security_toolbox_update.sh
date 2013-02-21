@@ -103,13 +103,13 @@ if test -d set
 then
 echo "Updating SET"
 cd set
-svn update
+git pull
 echo "SET updated"
 echo ""
 cd ..
 else
 echo "Getting SET"
-svn co http://svn.secmaniac.com/social_engineering_toolkit set/
+git clone https://github.com/trustedsec/social-engineer-toolkit/ set/
 echo "SET downloaded"
 echo ""
 fi
