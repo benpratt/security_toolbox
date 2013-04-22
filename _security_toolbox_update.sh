@@ -226,3 +226,19 @@ echo "Nmap-Tools downloaded"
 echo ""
 fi
 
+# htty from github
+if test -d htty
+then
+echo "Updating htty from github"
+cd htty
+git pull
+echo "htty"
+echo ""
+cd ..
+else
+echo "Getting htty from github"
+git clone https://github.com/htty/htty.git htty
+echo "htty downloaded"
+echo ""
+fi
+
