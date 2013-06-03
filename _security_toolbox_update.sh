@@ -18,21 +18,22 @@ echo "Metasploit from github downloaded"
 echo ""
 fi
 
+# Deprecate
 # Metasploit from svn
-if test -d metasploit_svn
-then
-echo "Updating Metasploit from svn"
-cd metasploit_svn
-svn update
-echo "Metasploit from svn updated"
-echo ""
-cd ..
-else
-echo "Getting Metasploit from svn"
-svn co https://www.metasploit.com/svn/framework3/trunk/ metasploit_svn/
-echo "Metasploit from svn downloaded"
-echo ""
-fi
+#if test -d metasploit_svn
+#then
+#echo "Updating Metasploit from svn"
+#cd metasploit_svn
+#svn update
+#echo "Metasploit from svn updated"
+#echo ""
+#cd ..
+#else
+#echo "Getting Metasploit from svn"
+#svn co https://www.metasploit.com/svn/framework3/trunk/ metasploit_svn/
+#echo "Metasploit from svn downloaded"
+#echo ""
+#fi
 
 # Nmap
 if test -d nmap
@@ -232,13 +233,29 @@ then
 echo "Updating htty from github"
 cd htty
 git pull
-echo "htty"
+echo "htty updated"
 echo ""
 cd ..
 else
 echo "Getting htty from github"
 git clone https://github.com/htty/htty.git htty
 echo "htty downloaded"
+echo ""
+fi
+
+# Scrapy from github
+if test -d scrapy
+then
+echo "Updating Scrapy from github"
+cd scrapy
+git pull
+echo "Scrapy updated"
+echo ""
+cd ..
+else
+echo "Getting Scrapy from github"
+git clone https://github.com/scrapy/scrapy.git scrapy
+echo "Scrapy downloaded"
 echo ""
 fi
 
