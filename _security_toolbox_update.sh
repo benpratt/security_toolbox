@@ -78,7 +78,7 @@ echo ""
 cd ..
 else
 echo "Getting Reconnoiter"
-svn co https://reconnoiter.svn.sourceforge.net/svnroot/reconnoiter reconnoiter/
+svn co https://svn.code.sf.net/p/reconnoiter/code/ reconnoiter/
 echo "Reconnoiter downloaded"
 echo ""
 fi
@@ -94,7 +94,7 @@ echo ""
 cd ..
 else
 echo "Getting Samurai"
-svn co https://samurai.svn.sourceforge.net/svnroot/samurai samurai/
+svn co https://svn.code.sf.net/p/samurai/code/ samurai/
 echo "Samurai downloaded"
 echo ""
 fi
@@ -136,13 +136,13 @@ if test -d w3af
 then
 echo "Updating w3af"
 cd w3af
-svn update
+git pull
 echo "w3af updated"
 echo ""
 cd ..
 else
 echo "Getting w3af"
-svn co https://w3af.svn.sourceforge.net/svnroot/w3af/trunk w3af/
+git clone https://github.com/andresriancho/w3af.git w3af
 echo "w3af downloaded"
 echo ""
 fi
