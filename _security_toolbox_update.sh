@@ -259,3 +259,19 @@ echo "Scrapy downloaded"
 echo ""
 fi
 
+# Recon-ng from Bitbucket
+if test -d recon-ng
+then
+echo "Updating Recon-ng from bitbucket"
+cd recon-ng
+git pull
+echo "Recon-ng updated"
+echo ""
+cd ..
+else
+echo "Getting Recon-ng from bitbucket"
+git clone https://bitbucket.org/LaNMaSteR53/recon-ng.git recon-ng
+echo "Recon-ng downloaded"
+echo ""
+fi
+
