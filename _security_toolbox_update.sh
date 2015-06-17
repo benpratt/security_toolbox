@@ -275,3 +275,18 @@ echo "Recon-ng downloaded"
 echo ""
 fi
 
+# Shodan
+if test -d shodan
+then
+echo "Updating Shodan"
+cd shodan
+git pull
+echo "Shodan updated"
+echo ""
+cd ..
+else
+echo "Getting Shodan"
+git clone https://github.com/achillean/shodan-python.git
+echo "Shodan downloaded"
+echo ""
+fi
