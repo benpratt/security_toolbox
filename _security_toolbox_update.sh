@@ -276,10 +276,10 @@ echo ""
 fi
 
 # Shodan
-if test -d shodan
+if test -d shodan-python
 then
 echo "Updating Shodan"
-cd shodan
+cd shodan-python
 git pull
 echo "Shodan updated"
 echo ""
