@@ -275,6 +275,22 @@ echo "Recon-ng downloaded"
 echo ""
 fi
 
+# zmap from github
+if test -d zmap
+then
+echo "Updating zmap from github"
+cd zmap
+git pull
+echo "zmap update"
+echo ""
+cd ..
+else
+echo "Getting zmap from github"
+git clone https://github.com/zmap/zmap.git zmap
+echo "zmap downloaded"
+echo ""
+fi
+
 # Shodan
 if test -d shodan-python
 then
