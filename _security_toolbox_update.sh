@@ -306,3 +306,19 @@ git clone https://github.com/achillean/shodan-python.git
 echo "Shodan downloaded"
 echo ""
 fi
+
+# dnscat2
+if test -d dnscat2
+then
+echo "Updating dnscat2"
+cd dnscat2
+git pull
+echo "Shodan dnscat2"
+echo ""
+cd ..
+else
+echo "Getting dnscat2"
+git clone https://github.com/iagox86/dnscat2.git
+echo "dnscat2 downloaded"
+echo ""
+fi
