@@ -302,7 +302,7 @@ echo ""
 cd ..
 else
 echo "Getting Shodan"
-git clone https://github.com/achillean/shodan-python.git
+git clone https://github.com/achillean/shodan-python.git shodan-python
 echo "Shodan downloaded"
 echo ""
 fi
@@ -313,12 +313,28 @@ then
 echo "Updating dnscat2"
 cd dnscat2
 git pull
-echo "Shodan dnscat2"
+echo "dnscat2 updated"
 echo ""
 cd ..
 else
 echo "Getting dnscat2"
-git clone https://github.com/iagox86/dnscat2.git
+git clone https://github.com/iagox86/dnscat2.git dnscat2
 echo "dnscat2 downloaded"
+echo ""
+fi
+
+# testssl.sh
+if test -d testssl
+then
+echo "Updating testssl"
+cd testssl
+git pull
+echo "testssl updated"
+echo ""
+cd ..
+else
+echo "Getting testssl"
+git clone https://github.com/drwetter/testssl.sh.git testssl
+echo "testssl downloaded"
 echo ""
 fi
