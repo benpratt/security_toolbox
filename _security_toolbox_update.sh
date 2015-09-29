@@ -338,3 +338,19 @@ git clone https://github.com/drwetter/testssl.sh.git testssl
 echo "testssl downloaded"
 echo ""
 fi
+
+# Gryffin
+if test -d gryffin
+then
+echo "Updating Gryffin"
+cd gryffin
+git pull
+echo "Gryffin updated"
+echo ""
+cd ..
+else
+echo "Getting Gryffin"
+git clone https://github.com/yahoo/gryffin.git gryffin
+echo "Gryffin downloaded"
+echo ""
+fi
