@@ -281,13 +281,28 @@ then
 echo "Updating zmap from github"
 cd zmap
 git pull
-echo "zmap update"
+echo "zmap updated"
 echo ""
 cd ..
 else
 echo "Getting zmap from github"
 git clone https://github.com/zmap/zmap.git zmap
 echo "zmap downloaded"
+echo ""
+fi
+
+# zgrab from github
+if test -d zgrab
+then
+echo "Updating zgrab from github"
+cd zgrab
+git pull
+echo "zgrab updated"
+echo ""
+else
+echo "Getting zgrab from github"
+git clone https://github.com/zmap/zgrab.git zgrab
+echo "zgrab downloaded"
 echo ""
 fi
 
