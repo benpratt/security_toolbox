@@ -369,3 +369,19 @@ git clone https://github.com/yahoo/gryffin.git gryffin
 echo "Gryffin downloaded"
 echo ""
 fi
+
+# Subbrute
+if test -d subbrute
+then
+echo "Updating Subbrute"
+cd subbrute
+git pull
+echo "Subbrute updated"
+echo ""
+cd ..
+else
+echo "Getting Subbrute"
+git clone https://github.com/TheRook/subbrute.git subbrute
+echo "Subbrute downloaded"
+echo ""
+fi
