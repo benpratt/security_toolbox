@@ -148,18 +148,34 @@ echo ""
 fi
 
 # waffit
-if test -d waffit
+#if test -d waffit
+#then
+#echo "Updating waffit"
+#cd waffit
+#svn update
+#echo "waffit updated"
+#echo ""
+#cd ..
+#else
+#echo "Getting waffit"
+#svn co http://waffit.googlecode.com/svn/trunk/ waffit/
+#echo "waffit downloaded"
+#echo ""
+#fi
+
+# wafw00f from github
+if test -d wafw00f
 then
-echo "Updating waffit"
-cd waffit
-svn update
-echo "waffit updated"
+echo "Updating wafw00f from github"
+cd wafw00f
+git pull
+echo "wafw00f updated"
 echo ""
 cd ..
 else
-echo "Getting waffit"
-svn co http://waffit.googlecode.com/svn/trunk/ waffit/
-echo "waffit downloaded"
+echo "Getting wafw00f from github"
+git clone https://github.com/EnableSecurity/wafw00f.git wafw00f
+echo "wafw00f downloaded"
 echo ""
 fi
 
@@ -180,34 +196,50 @@ echo ""
 fi
 
 # hash-identifier
-if test -d hash-identifier
-then
-echo "Updating hash-identifier"
-cd hash-identifier
-svn update
-echo "hash-identifier updated"
-echo ""
-cd ..
-else
-echo "Getting hash-identifier"
-svn checkout http://hash-identifier.googlecode.com/svn/trunk/ hash-identifier
-echo "hash-identifier downloaded"
-echo ""
-fi
+#if test -d hash-identifier
+#then
+#echo "Updating hash-identifier"
+#cd hash-identifier
+#svn update
+#echo "hash-identifier updated"
+#echo ""
+#cd ..
+#else
+#echo "Getting hash-identifier"
+#svn checkout http://hash-identifier.googlecode.com/svn/trunk/ hash-identifier
+#echo "hash-identifier downloaded"
+#echo ""
+#fi
 
 # theharvester
-if test -d theharvester
+#if test -d theharvester
+#then
+#echo "Updating theharvester"
+#cd theharvester
+#svn update
+#echo "theharvester updated"
+#echo ""
+#cd ..
+#else
+#echo "Getting theharvester"
+#svn checkout http://theharvester.googlecode.com/svn/trunk/ theharvester
+#echo "theharvester downloaded"
+#cho ""
+#i
+
+# theHarvester from github
+if test -d theHarvester
 then
-echo "Updating theharvester"
-cd theharvester
-svn update
-echo "theharvester updated"
+echo "Updating theHarvester from github"
+cd theHarvester
+git pull
+echo "theHarvester updated"
 echo ""
 cd ..
 else
-echo "Getting theharvester"
-svn checkout http://theharvester.googlecode.com/svn/trunk/ theharvester
-echo "theharvester downloaded"
+echo "Getting theHarvester from github"
+git clone https://github.com/laramies/theHarvester.git theHarvester
+echo "theHarvester downloaded"
 echo ""
 fi
 
