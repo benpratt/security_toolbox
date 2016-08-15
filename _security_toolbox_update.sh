@@ -417,3 +417,19 @@ git clone https://github.com/TheRook/subbrute.git subbrute
 echo "Subbrute downloaded"
 echo ""
 fi
+
+# datasploit
+if test -d datasploit
+then
+echo "Updating datasploit"
+cd datasploit
+git pull
+echo "datasploit updated"
+echo ""
+cd ..
+else
+echo "Getting datasploit"
+git clone https://github.com/upgoingstar/datasploit.git datasploit
+echo "datasploit downloaded"
+echo ""
+fi
