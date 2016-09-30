@@ -18,23 +18,6 @@ echo "Metasploit from github downloaded"
 echo ""
 fi
 
-# Deprecate
-# Metasploit from svn
-#if test -d metasploit_svn
-#then
-#echo "Updating Metasploit from svn"
-#cd metasploit_svn
-#svn update
-#echo "Metasploit from svn updated"
-#echo ""
-#cd ..
-#else
-#echo "Getting Metasploit from svn"
-#svn co https://www.metasploit.com/svn/framework3/trunk/ metasploit_svn/
-#echo "Metasploit from svn downloaded"
-#echo ""
-#fi
-
 # Nmap
 if test -d nmap
 then
@@ -56,13 +39,13 @@ if test -d putty
 then
 echo "Updating PuTTY"
 cd putty
-svn update
+git pull
 echo "PuTTY updated"
 echo ""
 cd ..
 else
 echo "Getting PuTTY"
-svn co svn://svn.tartarus.org/sgt/putty putty/
+git clone https://git.tartarus.org/simon/putty.git putty
 echo "PuTTY downloaded"
 echo ""
 fi
@@ -210,22 +193,6 @@ fi
 #echo "hash-identifier downloaded"
 #echo ""
 #fi
-
-# theharvester
-#if test -d theharvester
-#then
-#echo "Updating theharvester"
-#cd theharvester
-#svn update
-#echo "theharvester updated"
-#echo ""
-#cd ..
-#else
-#echo "Getting theharvester"
-#svn checkout http://theharvester.googlecode.com/svn/trunk/ theharvester
-#echo "theharvester downloaded"
-#cho ""
-#i
 
 # theHarvester from github
 if test -d theHarvester
