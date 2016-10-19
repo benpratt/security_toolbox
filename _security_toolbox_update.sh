@@ -194,6 +194,22 @@ fi
 #echo ""
 #fi
 
+# hashcat from github
+if test -d hashcat
+then
+echo "Updating hashcat from github"
+cd hashcat
+git pull
+echo "hashcat updated"
+echo ""
+cd ..
+else
+echo "Getting hashcat from github"
+git clone https://github.com/hashcat/hashcat.git hashcat
+echo "hashcat downloaded"
+echo ""
+fi
+
 # theHarvester from github
 if test -d theHarvester
 then
