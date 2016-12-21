@@ -416,3 +416,19 @@ git clone https://github.com/upgoingstar/datasploit.git datasploit
 echo "datasploit downloaded"
 echo ""
 fi
+
+# Gophish
+if test -d gophish
+then
+echo "Updating Gophish"
+cd gophish
+git pull
+echo "Gophish updated"
+echo ""
+cd ..
+else
+echo "Getting Gophish"
+git clone https://github.com/gophish/gophish.git gophish
+echo "Gophish downloaded"
+echo ""
+fi
