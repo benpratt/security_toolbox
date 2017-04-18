@@ -432,3 +432,19 @@ git clone https://github.com/gophish/gophish.git gophish
 echo "Gophish downloaded"
 echo ""
 fi
+
+# Dissembling-Ferret
+if test -d Dissembling-Ferret
+then
+echo "Updating Dissembling-Ferret"
+cd Dissembling-Ferret
+git pull
+echo "Dissembling-Ferret updated"
+echo ""
+cd ..
+else
+echo "Getting Dissembling-Ferret"
+git clone https://github.com/clayball/Dissembling-Ferret.git Dissembling-Ferret
+echo "Dissembling-Ferret downloaded"
+echo ""
+fi
