@@ -1,8 +1,9 @@
 #!/bin/sh
 
-cd ~/security_toolbox/
+home_dir="~/security_toolbox/"
 
 # Metasploit from github
+cd $home_dir
 if test -d metasploit_git
 then
 echo "Updating Metasploit from github"
@@ -19,6 +20,7 @@ echo ""
 fi
 
 # Nmap
+cd $home_dir
 if test -d nmap
 then
 echo "Updating Nmap"
@@ -35,6 +37,7 @@ echo ""
 fi
 
 # PuTTY
+cd $home_dir
 if test -d putty
 then
 echo "Updating PuTTY"
@@ -51,6 +54,7 @@ echo ""
 fi
 
 # Reconnoiter
+cd $home_dir
 if test -d reconnoiter
 then
 echo "Updating Reconnoiter"
@@ -67,6 +71,7 @@ echo ""
 fi
 
 # Samurai
+cd $home_dir
 if test -d samurai
 then
 echo "Updating Samurai"
@@ -83,6 +88,7 @@ echo ""
 fi
 
 # SET
+cd $home_dir
 if test -d set
 then
 echo "Updating SET"
@@ -99,6 +105,7 @@ echo ""
 fi
 
 # sqlmap
+cd $home_dir
 if test -d sqlmap
 then
 echo "Updating sqlmap"
@@ -115,6 +122,7 @@ echo ""
 fi
 
 # w3af
+cd $home_dir
 if test -d w3af
 then
 echo "Updating w3af"
@@ -131,6 +139,7 @@ echo ""
 fi
 
 # waffit
+#cd $home_dir
 #if test -d waffit
 #then
 #echo "Updating waffit"
@@ -147,6 +156,7 @@ fi
 #fi
 
 # wafw00f from github
+cd $home_dir
 if test -d wafw00f
 then
 echo "Updating wafw00f from github"
@@ -163,6 +173,7 @@ echo ""
 fi
 
 # dnsrecon from github
+cd $home_dir
 if test -d dnsrecon
 then
 echo "Updating dnsrecon from github"
@@ -179,6 +190,7 @@ echo ""
 fi
 
 # hash-identifier
+#cd $home_dir
 #if test -d hash-identifier
 #then
 #echo "Updating hash-identifier"
@@ -195,6 +207,7 @@ fi
 #fi
 
 # hashcat from github
+cd $home_dir
 if test -d hashcat
 then
 echo "Updating hashcat from github"
@@ -211,6 +224,7 @@ echo ""
 fi
 
 # theHarvester from github
+cd $home_dir
 if test -d theHarvester
 then
 echo "Updating theHarvester from github"
@@ -227,6 +241,7 @@ echo ""
 fi
 
 # Nmap-Tools by SpiderLabs from github
+cd $home_dir
 if test -d nmap-tools
 then
 echo "Updating Nmap-Tools by SpiderLabs from github"
@@ -243,6 +258,7 @@ echo ""
 fi
 
 # htty from github
+cd $home_dir
 if test -d htty
 then
 echo "Updating htty from github"
@@ -259,6 +275,7 @@ echo ""
 fi
 
 # Scrapy from github
+cd $home_dir
 if test -d scrapy
 then
 echo "Updating Scrapy from github"
@@ -275,6 +292,7 @@ echo ""
 fi
 
 # Recon-ng from Bitbucket
+cd $home_dir
 if test -d recon-ng
 then
 echo "Updating Recon-ng from bitbucket"
@@ -291,6 +309,7 @@ echo ""
 fi
 
 # zmap from github
+cd $home_dir
 if test -d zmap
 then
 echo "Updating zmap from github"
@@ -307,6 +326,7 @@ echo ""
 fi
 
 # zgrab from github
+cd $home_dir
 if test -d zgrab
 then
 echo "Updating zgrab from github"
@@ -322,6 +342,7 @@ echo ""
 fi
 
 # Shodan
+cd $home_dir
 if test -d shodan-python
 then
 echo "Updating Shodan"
@@ -338,6 +359,7 @@ echo ""
 fi
 
 # dnscat2
+cd $home_dir
 if test -d dnscat2
 then
 echo "Updating dnscat2"
@@ -354,6 +376,7 @@ echo ""
 fi
 
 # testssl.sh
+cd $home_dir
 if test -d testssl
 then
 echo "Updating testssl"
@@ -370,6 +393,7 @@ echo ""
 fi
 
 # Gryffin
+cd $home_dir
 if test -d gryffin
 then
 echo "Updating Gryffin"
@@ -386,6 +410,7 @@ echo ""
 fi
 
 # Subbrute
+cd $home_dir
 if test -d subbrute
 then
 echo "Updating Subbrute"
@@ -402,6 +427,7 @@ echo ""
 fi
 
 # datasploit
+cd $home_dir
 if test -d datasploit
 then
 echo "Updating datasploit"
@@ -418,6 +444,7 @@ echo ""
 fi
 
 # Gophish
+cd $home_dir
 if test -d gophish
 then
 echo "Updating Gophish"
@@ -434,6 +461,7 @@ echo ""
 fi
 
 # Dissembling-Ferret
+cd $home_dir
 if test -d Dissembling-Ferret
 then
 echo "Updating Dissembling-Ferret"
