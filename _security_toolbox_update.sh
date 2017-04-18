@@ -433,17 +433,17 @@ echo ""
 fi
 
 # Dissembling-Ferret
-if test -d Dissembling-Ferret
+if test -d dissembling-ferret
 then
 echo "Updating Dissembling-Ferret"
-cd Dissembling-Ferret
+cd dissembling-ferret
 git pull
 echo "Dissembling-Ferret updated"
 echo ""
 cd ..
 else
 echo "Getting Dissembling-Ferret"
-git clone https://github.com/clayball/Dissembling-Ferret.git Dissembling-Ferret
+git clone https://github.com/clayball/Dissembling-Ferret.git dissembling-ferret
 echo "Dissembling-Ferret downloaded"
 echo ""
 fi
