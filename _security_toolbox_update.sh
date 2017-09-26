@@ -1,10 +1,8 @@
 #!/bin/sh
 
-if test .security_toolbox
+if [ ! -e ./.security_toolbox ];
 then
-cd .
-else
-cp .security_toolbox_default
+cp .security_toolbox_default .security_toolbox
 fi
 
 # Metasploit from github
