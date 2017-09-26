@@ -2,6 +2,7 @@
 
 if test .security_toolbox
 then
+cd .
 else
 cp .security_toolbox_default
 fi
