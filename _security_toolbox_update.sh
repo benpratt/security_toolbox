@@ -1,5 +1,11 @@
 #!/bin/sh
 
+if test .security_toolbox
+then
+else
+cp .security_toolbox_default
+fi
+
 # Metasploit from github
 if grep -q "*metasploit_git" ./.security_toolbox
 then
