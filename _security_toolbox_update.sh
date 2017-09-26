@@ -5,6 +5,9 @@ then
 cp .security_toolbox_default .security_toolbox
 fi
 
+# Check for no options selected
+#if grep -q "*"
+
 # Metasploit from github
 if grep -q "*metasploit_git" ./.security_toolbox
 then
