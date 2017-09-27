@@ -6,7 +6,7 @@ cp .security_toolbox_default .security_toolbox
 fi
 
 # Check for no options selected
-if [ grep -vq "*" ./.security_toolbox ];
+if grep -v -q "*" ./.security_toolbox
 then
 echo "No packages selected in ./.security_toolbox"
 fi
