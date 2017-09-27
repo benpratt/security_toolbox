@@ -6,14 +6,13 @@ cp .security_toolbox_default .security_toolbox
 fi
 
 # Check for no options selected
-if grep -v -q "*" ./.security_toolbox
+if grep -v "*" ./.security_toolbox
 then
 echo "No packages selected in ./.security_toolbox"
 fi
 
 # Metasploit from github
-if grep -q "*metasploit_git" ./.security_toolbox
-then
+if grep -q "*metasploit_git" ./.se
 if test -d metasploit_git
 then
 echo "Updating Metasploit from github"
