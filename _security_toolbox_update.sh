@@ -12,7 +12,7 @@ echo "No packages selected in ./.security_toolbox"
 fi
 
 # Metasploit from github
-if grep -q "*metasploit_git" ./.se
+if grep -q "*metasploit_git" ./.security_toolbox
 then
 if test -d metasploit_git
 then
