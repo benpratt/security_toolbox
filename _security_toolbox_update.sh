@@ -8,7 +8,7 @@ fi
 # Check for no options selected
 if ! [ grep -q "*" ];
 then
-echo "No packages selected in ./.security_toolbox
+echo "No packages selected in ./.security_toolbox"
 fi
 
 # Metasploit from github
