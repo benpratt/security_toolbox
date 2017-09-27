@@ -13,6 +13,7 @@ fi
 
 # Metasploit from github
 if grep -q "*metasploit_git" ./.se
+then
 if test -d metasploit_git
 then
 echo "Updating Metasploit from github"
