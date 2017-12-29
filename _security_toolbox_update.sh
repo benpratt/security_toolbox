@@ -49,21 +49,21 @@ echo ""
 fi
 fi
 
-# nmap_vulners
-if grep -q "*nmap_vulners" ./.security_toolbox
+# nmap-vulners
+if grep -q "*nmap-vulners" ./.security_toolbox
 then
-if test -d nmap_vulners
+if test -d nmap-vulners
 then
-echo "Updating nmap_vulners"
-cd nmap_vulners
+echo "Updating nmap-vulners"
+cd nmap-vulners
 git pull
-echo "nmap_vulners updated"
+echo "nmap-vulners updated"
 echo ""
 cd ..
 else
-echo "Getting nmap_vulners"
+echo "Getting nmap-vulners"
 git clone https://github.com/vulnersCom/nmap-vulners.git nmap-vulners
-echo "nmap_vulners downloaded"
+echo "nmap-vulners downloaded"
 echo ""
 fi
 fi
