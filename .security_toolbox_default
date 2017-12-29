@@ -9,6 +9,7 @@ htty
 metasploit_git
 nmap
 nmap-tools
+nmap-vulners
 putty
 recon-ng
 reconnoiter
