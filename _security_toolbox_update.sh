@@ -49,6 +49,25 @@ echo ""
 fi
 fi
 
+# nmap_vulners
+if grep -q "*nmap_vulners" ./.security_toolbox
+then
+if test -d nmap_vulners
+then
+echo "Updating nmap_vulners"
+cd nmap_vulners
+git pull
+echo "nmap_vulners updated"
+echo ""
+cd ..
+else
+echo "Getting nmap_vulners"
+git clone https://github.com/vulnersCom/nmap-vulners.git nmap-vulners
+echo "nmap_vulners downloaded"
+echo ""
+fi
+fi
+
 # PuTTY
 if grep -q "*putty" ./.security_toolbox
 then
