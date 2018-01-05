@@ -236,6 +236,25 @@ echo ""
 fi
 fi
 
+# dnspython from github
+if grep -q "*dnspython" ./.security_toolbox
+then
+if test -d dnspython
+then
+echo "Updating dnspython from github"
+cd dnspython
+git pull
+echo "dnspython updated"
+echo ""
+cd ..
+else
+echo "Getting dnspython from github"
+git clone https://github.com/rthalley/dnspython.git dnspython
+echo "dnspython downloaded"
+echo ""
+fi
+fi
+
 # hash-identifier
 #if test -d hash-identifier
 #then
