@@ -18,6 +18,7 @@ if test -d metasploit_git
 then
 echo "Updating Metasploit from github"
 cd metasploit_git
+git stash
 git pull
 echo "Metasploit from github updated"
 echo ""
