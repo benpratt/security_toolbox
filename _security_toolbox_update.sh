@@ -575,3 +575,22 @@ echo "Dissembling-Ferret downloaded"
 echo ""
 fi
 fi
+
+# Nikto from github
+if grep -q "*nikto" ./.security_toolbox
+then
+if test -d nikto
+then
+echo "Updating Nikto from github"
+cd nikto
+git pull
+echo "Nikto from github updated"
+echo ""
+cd ..
+else
+echo "Getting Nikto from github"
+git clone https://github.com/sullo/nikto.git nikto
+echo "Nikto from github downloaded"
+echo ""
+fi
+fi
