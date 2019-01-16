@@ -8,6 +8,7 @@ gryffin
 hashcat
 htty
 metasploit_git
+nikto
 nmap
 nmap-tools
 nmap-vulners
@@ -26,4 +27,3 @@ w3af
 wafw00f
 zgrab
 zmap
-nikto
