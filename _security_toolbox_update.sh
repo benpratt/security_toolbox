@@ -69,6 +69,25 @@ echo ""
 fi
 fi
 
+# vulscan for Nmap
+if grep -q "*vulscan" ./.security_toolbox
+then
+if test -d vulscan
+then
+echo "Updating vulscan for Nmap"
+cd vulscan
+git pull
+echo "vulscan updated"
+echo ""
+cd ..
+else
+echo "Getting vulscan"
+git clone https://github.com/scipag/vulscan.git vulscan
+echo "vulscan downloaded"
+echo ""
+fi
+fi
+
 # PuTTY
 if grep -q "*putty" ./.security_toolbox
 then
