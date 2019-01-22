@@ -12,12 +12,12 @@ echo "No packages selected in ./.security_toolbox"
 fi
 
 # Metasploit from github
-if grep -q "*metasploit_git" ./.security_toolbox
+if grep -q "*metasploit" ./.security_toolbox
 then
-if test -d metasploit_git
+if test -d metasploit
 then
 echo "Updating Metasploit from github"
-cd metasploit_git
+cd metasploit
 git stash
 git pull
 echo "Metasploit from github updated"
@@ -25,7 +25,7 @@ echo ""
 cd ..
 else
 echo "Getting Metasploit from github"
-git clone https://github.com/rapid7/metasploit-framework.git metasploit_git
+git clone https://github.com/rapid7/metasploit-framework.git metasploit
 echo "Metasploit from github downloaded"
 echo ""
 fi
