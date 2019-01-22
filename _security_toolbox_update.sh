@@ -1,18 +1,18 @@
 #!/bin/sh
 
-if [ ! -e ./.security_toolbox ];
+if [ ! -e ./SECURITY_TOOLBOX_ADMIN/security_toolbox ];
 then
-cp .security_toolbox_default .security_toolbox
+cp SECURITY_TOOLBOX_ADMIN/security_toolbox_default SECURITY_TOOLBOX_ADMIN/security_toolbox
 fi
 
 # Check for no options selected
-if ! grep -q "*" ./.security_toolbox
+if ! grep -q "*" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
-echo "No packages selected in ./.security_toolbox"
+echo "No packages selected in ./SECURITY_TOOLBOX_ADMIN/security_toolbox"
 fi
 
 # Metasploit from github
-if grep -q "*metasploit" ./.security_toolbox
+if grep -q "*metasploit" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d metasploit
 then
@@ -32,7 +32,7 @@ fi
 fi
 
 # Nmap
-if grep -q "*nmap" ./.security_toolbox
+if grep -q "*nmap" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d nmap
 then
@@ -51,7 +51,7 @@ fi
 fi
 
 # nmap-vulners
-if grep -q "*nmap-vulners" ./.security_toolbox
+if grep -q "*nmap-vulners" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d nmap-vulners
 then
@@ -70,7 +70,7 @@ fi
 fi
 
 # vulscan for Nmap
-if grep -q "*vulscan" ./.security_toolbox
+if grep -q "*vulscan" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d vulscan
 then
@@ -89,7 +89,7 @@ fi
 fi
 
 # PuTTY
-if grep -q "*putty" ./.security_toolbox
+if grep -q "*putty" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d putty
 then
@@ -108,7 +108,7 @@ fi
 fi
 
 # Reconnoiter
-if grep -q "*reconnoiter" ./.security_toolbox
+if grep -q "*reconnoiter" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d reconnoiter
 then
@@ -127,7 +127,7 @@ fi
 fi
 
 # Samurai
-if grep -q "*samurai" ./.security_toolbox
+if grep -q "*samurai" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d samurai
 then
@@ -146,7 +146,7 @@ fi
 fi
 
 # SET
-if grep -q "*set" ./.security_toolbox
+if grep -q "*set" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d set
 then
@@ -165,7 +165,7 @@ fi
 fi
 
 # sqlmap
-if grep -q "*sqlmap" ./.security_toolbox
+if grep -q "*sqlmap" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d sqlmap
 then
@@ -184,7 +184,7 @@ fi
 fi
 
 # w3af
-if grep -q "*w3af" ./.security_toolbox
+if grep -q "*w3af" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d w3af
 then
@@ -202,24 +202,8 @@ echo ""
 fi
 fi
 
-# waffit
-#if test -d waffit
-#then
-#echo "Updating waffit"
-#cd waffit
-#svn update
-#echo "waffit updated"
-#echo ""
-#cd ..
-#else
-#echo "Getting waffit"
-#svn co http://waffit.googlecode.com/svn/trunk/ waffit/
-#echo "waffit downloaded"
-#echo ""
-#fi
-
 # wafw00f from github
-if grep -q "*wafw00f" ./.security_toolbox
+if grep -q "*wafw00f" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d wafw00f
 then
@@ -238,7 +222,7 @@ fi
 fi
 
 # dnsrecon from github
-if grep -q "*dnsrecon" ./.security_toolbox
+if grep -q "*dnsrecon" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d dnsrecon
 then
@@ -257,7 +241,7 @@ fi
 fi
 
 # dnspython from github
-if grep -q "*dnspython" ./.security_toolbox
+if grep -q "*dnspython" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d dnspython
 then
@@ -275,24 +259,8 @@ echo ""
 fi
 fi
 
-# hash-identifier
-#if test -d hash-identifier
-#then
-#echo "Updating hash-identifier"
-#cd hash-identifier
-#svn update
-#echo "hash-identifier updated"
-#echo ""
-#cd ..
-#else
-#echo "Getting hash-identifier"
-#svn checkout http://hash-identifier.googlecode.com/svn/trunk/ hash-identifier
-#echo "hash-identifier downloaded"
-#echo ""
-#fi
-
 # hashcat from github
-if grep -q "*hashcat" ./.security_toolbox
+if grep -q "*hashcat" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d hashcat
 then
@@ -311,7 +279,7 @@ fi
 fi
 
 # theHarvester from github
-if grep -q "*theHarvester" ./.security_toolbox
+if grep -q "*theHarvester" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d theHarvester
 then
@@ -330,7 +298,7 @@ fi
 fi
 
 # Nmap-Tools by SpiderLabs from github
-if grep -q "*nmap-tools" ./.security_toolbox
+if grep -q "*nmap-tools" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d nmap-tools
 then
@@ -349,7 +317,7 @@ fi
 fi
 
 # htty from github
-if grep -q "*htty" ./.security_toolbox
+if grep -q "*htty" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d htty
 then
@@ -368,7 +336,7 @@ fi
 fi
 
 # Scrapy from github
-if grep -q "*scrapy" ./.security_toolbox
+if grep -q "*scrapy" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d scrapy
 then
@@ -387,7 +355,7 @@ fi
 fi
 
 # Recon-ng from Bitbucket
-if grep -q "*recon-ng" ./.security_toolbox
+if grep -q "*recon-ng" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d recon-ng
 then
@@ -406,7 +374,7 @@ fi
 fi
 
 # zmap from github
-if grep -q "*zmap" ./.security_toolbox
+if grep -q "*zmap" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d zmap
 then
@@ -425,7 +393,7 @@ fi
 fi
 
 # zgrab from github
-if grep -q "*zgrab" ./.security_toolbox
+if grep -q "*zgrab" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d zgrab
 then
@@ -444,7 +412,7 @@ fi
 fi
 
 # Shodan
-if grep -q "*shodan-python" ./.security_toolbox
+if grep -q "*shodan-python" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d shodan-python
 then
@@ -463,7 +431,7 @@ fi
 fi
 
 # dnscat2
-if grep -q "*dnscat2" ./.security_toolbox
+if grep -q "*dnscat2" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d dnscat2
 then
@@ -482,7 +450,7 @@ fi
 fi
 
 # testssl.sh
-if grep -q "*testssl" ./.security_toolbox
+if grep -q "*testssl" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d testssl
 then
@@ -501,7 +469,7 @@ fi
 fi
 
 # Gryffin
-if grep -q "*gryffin" ./.security_toolbox
+if grep -q "*gryffin" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d gryffin
 then
@@ -520,7 +488,7 @@ fi
 fi
 
 # Subbrute
-if grep -q "*subbrute" ./.security_toolbox
+if grep -q "*subbrute" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d subbrute
 then
@@ -539,7 +507,7 @@ fi
 fi
 
 # datasploit
-if grep -q "*datasploit" ./.security_toolbox
+if grep -q "*datasploit" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d datasploit
 then
@@ -558,7 +526,7 @@ fi
 fi
 
 # Gophish
-if grep -q "*gophish" ./.security_toolbox
+if grep -q "*gophish" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d gophish
 then
@@ -577,7 +545,7 @@ fi
 fi
 
 # Dissembling-Ferret
-if grep -q "*dissembling-ferret" ./.security_toolbox
+if grep -q "*dissembling-ferret" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d dissembling-ferret
 then
@@ -596,7 +564,7 @@ fi
 fi
 
 # Nikto from github
-if grep -q "*nikto" ./.security_toolbox
+if grep -q "*nikto" ./SECURITY_TOOLBOX_ADMIN/security_toolbox
 then
 if test -d nikto
 then
