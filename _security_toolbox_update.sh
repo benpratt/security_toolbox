@@ -88,6 +88,25 @@ echo ""
 fi
 fi
 
+# Pythonizing Nmap
+if grep -q "*pythonizing_nmap" ./SECURITY_TOOLBOX_ADMIN/_security_toolbox_tools
+then
+if test -d pythonizing_nmap
+then
+echo "Updating pythonizing_nmap"
+cd pythonizing_nmap
+git pull
+echo "pythonizing_nmap updated"
+echo ""
+cd ..
+else
+echo "Getting pythonizing_namp"
+git clone https://github.com/gh0x0st/pythonizing_nmap.git pythonizing_nmap
+echo "pythonizing_nmap downloaded"
+echo ""
+fi
+fi
+
 # PuTTY
 if grep -q "*putty" ./SECURITY_TOOLBOX_ADMIN/_security_toolbox_tools
 then
