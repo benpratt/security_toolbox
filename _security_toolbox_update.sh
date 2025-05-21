@@ -38,13 +38,15 @@ if test -d nmap
 then
 echo "Updating Nmap"
 cd nmap
-svn update
+#svn update
+git pull
 echo "Nmap updated"
 echo ""
 cd ..
 else
 echo "Getting Nmap"
-svn co --username guest --password "" https://svn.nmap.org/nmap/ nmap/
+#svn co --username guest --password "" https://svn.nmap.org/nmap/ nmap/
+git clone https://github.com/nmap/nmap.git nmap
 echo "Nmap downloaded"
 echo ""
 fi
