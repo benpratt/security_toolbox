@@ -39,6 +39,7 @@ then
 echo "Updating Nmap"
 cd nmap
 #svn update
+git stash
 git pull
 echo "Nmap updated"
 echo ""
