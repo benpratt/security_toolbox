@@ -603,3 +603,22 @@ echo "Nikto from github downloaded"
 echo ""
 fi
 fi
+
+# DNS Triage from github
+if grep -q "*dns-triage" ./SECURITY_TOOLBOX_ADMIN/_security_toolbox_tools
+then
+if test -d dns-triage
+then
+echo "Updating DNS Triage from github"
+cd dns-triage
+git pull
+echo "DNS Triage from github updated"
+echo ""
+cd ..
+else
+echo "Getting DNS Triage from github"
+git clone https://github.com/Wh1t3Rh1n0/dns-triage dns-triage
+echo "DNS Triage from github downloaded"
+echo ""
+fi
+fi
