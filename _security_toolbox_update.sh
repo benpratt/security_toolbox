@@ -622,3 +622,22 @@ echo "DNS Triage from github downloaded"
 echo ""
 fi
 fi
+
+# MASSCAN from github
+if grep -q "*masscan" ./SECURITY_TOOLBOX_ADMIN/_security_toolbox_tools
+then
+if test -d masscan
+then
+echo "Updating MASSCAN from github"
+cd masscan
+git pull
+echo "MASSCAN from github updated"
+echo ""
+cd ..
+else
+echo "Getting MASSCAN from github"
+git clone https://github.com/robertdavidgraham/masscan.git masscan
+echo "MASSCAN from github downloaded"
+echo ""
+fi
+fi
